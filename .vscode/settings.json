@@ -1,5 +1,6 @@
 {
-  "C_Cpp.default.formatting": "Visual Studio",
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_style": "file",
   "C_Cpp.default.intelliSenseMode": "${defaultIntelliSenseMode}",
   "C_Cpp.clang_format_language": "English",
   "editor.insertSpaces": true,
@@ -8,6 +9,10 @@
     "*.h": "c",
     "*.c": "c"
   },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+},
   "cmake.configureOnOpen": false,
   "cmake.buildDirectory": "${workspaceFolder}/build"
 }
